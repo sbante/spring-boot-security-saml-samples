@@ -4,10 +4,13 @@ package com.ulisesbocchio.security.saml.spring.mvc;
  * @author Ulises Bocchio
  */
 
-import com.ulisesbocchio.security.saml.spring.security.SAMLUserDetails;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
+import org.springframework.security.core.annotation.AuthenticationPrincipal;
+import org.springframework.security.core.userdetails.User;
+import com.github.ulisesbocchio.spring.boot.security.saml.user.SAMLUserDetails;
+import com.github.ulisesbocchio.spring.boot.security.saml.user.SAMLUserDetails; 
 
 @Controller
 public class HomeController {
